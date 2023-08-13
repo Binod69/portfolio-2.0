@@ -1,6 +1,7 @@
 'use client';
 import {
   About,
+  Archive,
   Experience,
   LeftSide,
   MiddleSide,
@@ -25,6 +26,7 @@ const Main = () => {
         <About />
         <Experience />
         <Project />
+        <Archive />
       </div>
       <motion.div
         initial={{ opacity: 0 }}
