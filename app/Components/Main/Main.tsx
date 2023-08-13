@@ -13,7 +13,7 @@ const Main = () => {
       >
         <LeftSide />
       </motion.div>
-      <div className="mx-auto h-[88vh] p-4 ">
+      <div className="mx-auto h-[88vh] w-full p-4 ">
         <MiddleSide />
       </div>
       <motion.div
