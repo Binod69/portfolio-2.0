@@ -1,5 +1,5 @@
 'use client';
-import { About, LeftSide, MiddleSide, RightSide } from '../index';
+import { About, Experience, LeftSide, MiddleSide, RightSide } from '../index';
 import { motion } from 'framer-motion';
 
 const Main = () => {
@@ -16,6 +16,7 @@ const Main = () => {
       <div className="h-[88vh] mx-auto w-full p-4 ">
         <MiddleSide />
         <About />
+        <Experience />
       </div>
       <motion.div
         initial={{ opacity: 0 }}

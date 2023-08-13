@@ -11,7 +11,6 @@ import {
   SiTailwindcss,
 } from 'react-icons/si';
 import { profile } from '../../../public/index';
-import test from '../../../public/assets/test.webp';
 
 const About = () => {
   return (
@@ -103,12 +102,10 @@ const About = () => {
                 alt="profile.webp"
                 quality={80}
               />
-              <div className=" hidden lgl:inline-block absolute w-full h-80 bg-textGreen/20 rounded-md top-0 left-0 right- group-hover:bg-transparent duration-300"></div>
+              <div className=" hidden lgl:inline-block absolute  w-72 h-80 bg-textGreen/20 rounded-md top-0 left-6  group-hover:bg-transparent duration-300"></div>
             </div>
           </div>
-          <div>
-            <div className="hidden lgl:inline-flex w-full h-80 border-2 border-textGreen rounded-md group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-300"></div>
-          </div>
+          <div className="hidden lgl:inline-flex w-full h-80 border-2 border-textGreen rounded-md group-hover:-translate-x-2 group-hover:-translate-y-2 transition-transform duration-300"></div>
         </div>
       </div>
     </section>
