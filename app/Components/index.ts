@@ -6,3 +6,4 @@ export { default as About } from './About/About';
 export { default as Experience } from './Experience/Experience';
 export { default as Project } from './Project/Project';
 export { default as Archive } from './Archive/Archive';
+export { default as Contact } from './Contact/Contact';

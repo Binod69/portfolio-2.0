@@ -2,6 +2,7 @@
 import {
   About,
   Archive,
+  Contact,
   Experience,
   LeftSide,
   MiddleSide,
@@ -27,6 +28,7 @@ const Main = () => {
         <Experience />
         <Project />
         <Archive />
+        <Contact />
       </div>
       <motion.div
         initial={{ opacity: 0 }}
