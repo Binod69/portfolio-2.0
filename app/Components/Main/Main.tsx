@@ -1,5 +1,12 @@
 'use client';
-import { About, Experience, LeftSide, MiddleSide, RightSide } from '../index';
+import {
+  About,
+  Experience,
+  LeftSide,
+  MiddleSide,
+  Project,
+  RightSide,
+} from '../index';
 import { motion } from 'framer-motion';
 
 const Main = () => {
@@ -17,6 +24,7 @@ const Main = () => {
         <MiddleSide />
         <About />
         <Experience />
+        <Project />
       </div>
       <motion.div
         initial={{ opacity: 0 }}
