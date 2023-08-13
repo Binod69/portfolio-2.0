@@ -4,6 +4,7 @@ import {
   Archive,
   Contact,
   Experience,
+  Footer,
   LeftSide,
   MiddleSide,
   Project,
@@ -29,6 +30,7 @@ const Main = () => {
         <Project />
         <Archive />
         <Contact />
+        <Footer />
       </div>
       <motion.div
         initial={{ opacity: 0 }}
