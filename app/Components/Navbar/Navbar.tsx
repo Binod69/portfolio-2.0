@@ -14,6 +14,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
+    setShowMenu(false);
     const href = e.currentTarget.href;
     const targetId = href.replace(/.*\#/, '');
     const ele = document.getElementById(targetId);
@@ -26,6 +27,12 @@ const Navbar = () => {
       link.classList.remove('active');
     });
     e.currentTarget.classList.add('active');
+  };
+
+  const handleClick = (e: any) => {
+    if (e.target.contains(ref.current)) {
+      setShowMenu(false);
+    }
   };
   return (
     <>
@@ -132,6 +139,7 @@ const Navbar = () => {
                 ref={(node) => {
                   ref.current = node;
                 }}
+                onClick={handleClick}
                 className="absolute mdl:hidden top-0 right-0 w-full h-screen bg-black bg-opacity-50 flex flex-col items-end"
               >
                 <motion.div
@@ -164,7 +172,7 @@ const Navbar = () => {
                         </motion.li>
                       </Link>
                       <Link
-                        href="#home"
+                        href="#about"
                         className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
                         onClick={handleScroll}
                       >
@@ -181,7 +189,7 @@ const Navbar = () => {
                         </motion.li>
                       </Link>
                       <Link
-                        href="#home"
+                        href="#experience"
                         className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
                         onClick={handleScroll}
                       >
@@ -198,7 +206,7 @@ const Navbar = () => {
                         </motion.li>
                       </Link>
                       <Link
-                        href="#home"
+                        href="#project"
                         className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
                         onClick={handleScroll}
                       >
@@ -215,7 +223,7 @@ const Navbar = () => {
                         </motion.li>
                       </Link>
                       <Link
-                        href="#home"
+                        href="#contact"
                         className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
                         onClick={handleScroll}
                       >
@@ -283,6 +291,16 @@ const Navbar = () => {
                         </motion.a>
                       </Link>
                     </div>
+                    <Link href="mailto:budhathokib52@gmail.com">
+                      <motion.a
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.9, ease: 'easeIn' }}
+                        className="text-sm w-72 tracking-widest text-textGreen text-center mt-4"
+                      >
+                        <p>budhathokib52@gmail</p>
+                      </motion.a>
+                    </Link>
                   </div>
                 </motion.div>
               </div>
