@@ -26,6 +26,6 @@ body {
     rgb(var(--background-start-rgb));
 } */
 
-body {
-  background-color: #0a192f;
+.active {
+  color: #64ffda;
 }
