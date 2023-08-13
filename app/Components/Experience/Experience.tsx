@@ -27,18 +27,23 @@ const Experience = () => {
         <ul className="md:w-32 flex flex-col">
           <li
             onClick={handleDigi}
-            className="border-l-2 border-l-textGreen bg-transparent hover:bg-[#112240] py-3 text-sm text-textDark cursor-pointer duration-300 px-8 font-medium"
+            className={`${
+              workDigi
+                ? ' border-l-textGreen text-textGreen'
+                : 'border-l-hoverColor text-textDark'
+            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
           >
             Digi Dolphins
           </li>
           <li
             onClick={handleGoogle}
-            className="border-l-2 border-l-hoverColor bg-transparent hover:bg-[#112240] py-3 text-sm text-textDark cursor-pointer duration-300 px-8 font-medium"
+            className={`${
+              workGoogle
+                ? ' border-l-textGreen text-textGreen'
+                : 'border-l-hoverColor text-textDark'
+            } border-l-2 border-l-hoverColor bg-transparent hover:bg-[#112240] py-3 text-sm text-textDark cursor-pointer duration-300 px-8 font-medium`}
           >
             Google
-          </li>
-          <li className="border-l-2 border-l-hoverColor bg-transparent hover:bg-[#112240] py-3 text-sm text-textDark cursor-pointer duration-300 px-8 font-medium">
-            Digi Dolphins
           </li>
         </ul>
         {workDigi && <Works />}

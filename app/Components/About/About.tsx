@@ -10,7 +10,7 @@ import {
   SiMongodb,
   SiTailwindcss,
 } from 'react-icons/si';
-import { profile } from '../../../public/index';
+import profile from '../../../public/assets/profile.jpg';
 
 const About = () => {
   return (
