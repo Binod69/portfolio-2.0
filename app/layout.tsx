@@ -7,7 +7,7 @@ const montserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Binod Budhathoki',
-  description: 'My personal portfolio',
+  description: 'My Personal Portfolio',
 };
 
 export default function RootLayout({
