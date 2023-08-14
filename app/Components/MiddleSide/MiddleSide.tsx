@@ -21,9 +21,9 @@ const MiddleSide = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-4xl lgl:text-6xl font-titleFont font-semibold flex flex-col"
       >
-        Binod Budhathoki.{' '}
+        Binod Budhathoki.
         <span className="text-textDark mt-2 lgl:mt-4">
-          I build stuffs for the web
+          I build stuff for the web
         </span>
       </motion.h1>
       <motion.p
@@ -32,22 +32,24 @@ const MiddleSide = () => {
         transition={{ duration: 0.5, delay: 0.8 }}
         className="text-base md:max-w-[650px] text-textDark font-medium"
       >
-        I am a web developer with 1 years of experience in React and Next.js.I
-        have a strong foundation in front-end and backend development and
-        i&apos;m skilled in creating user-friendly and responsive web
+        I am a Front-end web developer with 1 years of experience in React and
+        Next.js.I have a strong foundation in front-end and backend development
+        and i&apos;m skilled in creating user-friendly and responsive web
         application using react and it&apos;s ecosystem.
         {/* <Link href="/">
           <span>Learn More</span>
         </Link> */}
       </motion.p>
-      <motion.button
-        initial={{ y: 10, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5, delay: 0.9 }}
-        className="w-52 h-14 text-sm font-titleFont border border-textGreen rounded-md text-textGreen tracking-wide hover:gb-hoverColor duration-300"
-      >
-        Check out my Project
-      </motion.button>
+      <Link href="#project">
+        <motion.button
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.9 }}
+          className="w-52 h-14 text-sm font-titleFont border border-textGreen rounded-md text-textGreen tracking-wide hover:gb-hoverColor duration-300"
+        >
+          Check out my Project
+        </motion.button>
+      </Link>
     </section>
   );
 };
