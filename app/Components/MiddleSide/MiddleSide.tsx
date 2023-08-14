@@ -32,8 +32,8 @@ const MiddleSide = () => {
         transition={{ duration: 0.5, delay: 0.8 }}
         className="text-base md:max-w-[650px] text-textDark font-medium"
       >
-        I am a Front-end web developer with 1 years of experience in React and
-        Next.js.I have a strong foundation in front-end and backend development
+        I am a Front-end web developer with experience in React and Next.js.I
+        have a strong foundation in front-end and a basic backend development
         and i&apos;m skilled in creating user-friendly and responsive web
         application using react and it&apos;s ecosystem.
         {/* <Link href="/">

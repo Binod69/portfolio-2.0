@@ -29,7 +29,7 @@ const Main = () => {
         <div className="h-[88vh] mx-auto w-full p-4 ">
           <MiddleSide />
           <About />
-          <Experience />
+          {/* <Experience /> */}
           <Project />
           <Archive />
           <Contact />
