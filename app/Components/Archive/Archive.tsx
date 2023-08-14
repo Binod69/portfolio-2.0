@@ -19,52 +19,48 @@ const Archive = () => {
           <ArchiveCard
             title={' Kindergarden'}
             desc={
-              ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumculpa voluptas commodi sequi eveniet iusto tempore cumquedignissimos voluptatum quod!'
+              'Webapp for Kindergarden where parents can visit to know about the Kindergarden'
             }
-            listItem={['React', 'Bootstrap', 'React-Router']}
+            listItem={['React', 'Bootstrap', 'Javascript']}
             link={'https://kindergarten-eight.vercel.app/'}
           />
           <ArchiveCard
+            title={'Hamro Booking'}
+            desc={'Frontend design for a booking webapp'}
+            listItem={['Next', 'Bootstrap', 'Javascript']}
+            link={'https://hamrobooking.vercel.app/'}
+          />
+          <ArchiveCard
+            title={'QR code Generator'}
+            desc={
+              'A simple website where users can create a qr code for their social media or website!'
+            }
+            listItem={['Html', 'Css', 'Javascript']}
+            link={'https://qr-generator-binod.vercel.app/'}
+          />
+          <ArchiveCard
+            title={'Netflix clone'}
+            desc={'A simple webapp to see the latest movies '}
+            listItem={['React', 'Tailwind', 'Javascript']}
+            link={'https://movieapp-binod.vercel.app/'}
+          />
+          <ArchiveCard
+            title={'Ai Summarizer'}
+            desc={
+              ' The AI Article Summarizer is a web application that can summarize articles '
+            }
+            listItem={['React', 'Redux', 'Tailwind']}
+            link={'https://ai-summarizer-swart.vercel.app/'}
+          />
+          {/* <ArchiveCard
             title={' Kindergarden'}
             desc={
               ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumculpa voluptas commodi sequi eveniet iusto tempore cumquedignissimos voluptatum quod!'
             }
             listItem={['React', 'Bootstrap', 'React-Router']}
             link={'https://kindergarten-eight.vercel.app/'}
-          />
-          <ArchiveCard
-            title={' Kindergarden'}
-            desc={
-              ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumculpa voluptas commodi sequi eveniet iusto tempore cumquedignissimos voluptatum quod!'
-            }
-            listItem={['React', 'Bootstrap', 'React-Router']}
-            link={'https://kindergarten-eight.vercel.app/'}
-          />
-          <ArchiveCard
-            title={' Kindergarden'}
-            desc={
-              ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumculpa voluptas commodi sequi eveniet iusto tempore cumquedignissimos voluptatum quod!'
-            }
-            listItem={['React', 'Bootstrap', 'React-Router']}
-            link={'https://kindergarten-eight.vercel.app/'}
-          />
-          <ArchiveCard
-            title={' Kindergarden'}
-            desc={
-              ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumculpa voluptas commodi sequi eveniet iusto tempore cumquedignissimos voluptatum quod!'
-            }
-            listItem={['React', 'Bootstrap', 'React-Router']}
-            link={'https://kindergarten-eight.vercel.app/'}
-          />
-          <ArchiveCard
-            title={' Kindergarden'}
-            desc={
-              ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumculpa voluptas commodi sequi eveniet iusto tempore cumquedignissimos voluptatum quod!'
-            }
-            listItem={['React', 'Bootstrap', 'React-Router']}
-            link={'https://kindergarten-eight.vercel.app/'}
-          />
-          {showMore && (
+          /> */}
+          {/* {showMore && (
             <>
               <motion.div
                 initial={{ opacity: 0 }}
@@ -123,7 +119,7 @@ const Archive = () => {
                 />
               </motion.div>
             </>
-          )}
+          )} */}
         </div>
         <div className="mt-12 flex items-center justify-center">
           {showMore ? (
