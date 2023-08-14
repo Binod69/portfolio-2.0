@@ -10,7 +10,7 @@ import { CiShare1 } from 'react-icons/ci';
 const Project = () => {
   return (
     <section id="project" className="max-w-container mx-auto lgl:px-20 py-24">
-      <SectionTitle title={'Some Things i have Built'} titleNo={'03.'} />
+      <SectionTitle title={'Some Things i have Built'} titleNo={'02.'} />
       <div className="w-full flex flex-col items-center justify-between gap-28 mt-10">
         {/* Projects1 */}
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
