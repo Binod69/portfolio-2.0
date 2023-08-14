@@ -1,10 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import SectionTitle from '../SectionTitle';
-import host from '../../../public/assets/host.webp';
+import digi from '../../../public/assets/digi.webp';
+import ecomm from '../../../public/assets/ecom.webp';
+import blog from '../../../public/assets/blog.webp';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { CiShare1 } from 'react-icons/ci';
-import ProjectComp from './ProjectComp';
 
 const Project = () => {
   return (
@@ -15,15 +16,17 @@ const Project = () => {
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
           <div className="flex flex-col xl:flex-row gap-6">
             <Link
-              href="https://ecommerce-rosy-zeta.vercel.app/"
+              href="https://digi-dolphins.vercel.app/"
               target="_blank"
               className="w-full xl:w-1/2 h-auto relative group"
             >
               <div>
                 <Image
                   className="w-full h-full object-contain"
-                  src={host}
+                  src={digi}
                   alt="host.webp"
+                  placeholder="blur"
+                  quality={80}
                 />
               </div>
             </Link>
@@ -31,32 +34,40 @@ const Project = () => {
               <p className="font-titleFont text-textGreen text-sm tracking-wide">
                 Featured Projects
               </p>
-              <h3 className="text-2xl font-bold">Amazon Clone</h3>
+              <h3 className="text-2xl font-bold">Agency</h3>
               <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-                tempore?
-                <span className="text-textGreen">0-auth</span> Lorem ipsum dolor
-                sit amet.
-                <span className="text-textGreen">stripe</span>
+                Digi Dolphins is a specialized company that focuses exclusively
+                on creating
+                <span className="text-textGreen">
+                  {' '}
+                  cutting-edge web applications.
+                </span>{' '}
+                With a team of dedicated experts, the company is committed to
+                pushing the{' '}
+                <span className="text-textGreen">
+                  boundaries of web technology
+                </span>{' '}
+                to deliver innovative and impactful solutions for clients across
+                various industries.
               </p>
               <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2  md:gap-5 justify-between  text-textDark">
                 <li>Next</li>
-                <li>Javascript</li>
-                <li>Tailwind</li>
-                <li>Stripe</li>
+                <li>Typescript</li>
+                <li>Bootstrap</li>
+                <li>Responsive Design</li>
                 <li>Vercel Deployment</li>
               </ul>
               <div className="text-2xl flex gap-4">
                 <Link
                   className="hover:text-textGreen duration-300"
-                  href="https://github.com/Binod69/ecommerce-wholesale"
+                  href="https://github.com/Binod69/digi-dolphins"
                   target="_blank"
                 >
                   <AiOutlineGithub />
                 </Link>
                 <Link
                   className="hover:text-textGreen duration-300"
-                  href="https://ecommerce-binod69.vercel.app/"
+                  href="https://digi-dolphins.vercel.app/"
                   target="_blank"
                 >
                   <CiShare1 />
@@ -66,33 +77,20 @@ const Project = () => {
           </div>
         </div>
         {/* Projects2 */}
-        {/* <ProjectComp
-        orderimg={'2'}
-        ordertxt={'1'}
-        image={host}
-        desc={
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nostrum sequi unde nemo exercitationem expedita mollitia pariatur quam ad quae.'
-        }
-        tech1={'Next'}
-        tech2={'Javascript'}
-        tech3={'Tailwind'}
-        tech4={'Stripe'}
-        tech5={'Vercel Deployment'}
-        linkGithub={'https://github.com/Binod69/ecommerce-wholesale'}
-        linkWebsite={'https://ecommerce-binod69.vercel.app/'}
-      /> */}
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
           <div className="flex flex-col xl:flex-row-reverse gap-6">
             <Link
-              href="https://ecommerce-rosy-zeta.vercel.app/"
+              href="https://ecommerce-binod69.vercel.app/"
               target="_blank"
               className="w-full xl:w-1/2 h-auto relative group"
             >
               <div>
                 <Image
                   className="w-full h-full object-contain"
-                  src={host}
+                  src={ecomm}
                   alt="host.webp"
+                  placeholder="blur"
+                  quality={80}
                 />
               </div>
             </Link>
@@ -102,18 +100,25 @@ const Project = () => {
               </p>
               <h3 className="text-2xl font-bold">Amazon Clone</h3>
               <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 xl:-mr-16 rounded-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-                tempore?
-                <span className="text-textGreen">0-auth</span> Lorem ipsum dolor
-                sit amet.
-                <span className="text-textGreen">stripe</span>
+                A simple clone project of Amazon{' '}
+                <span className="text-textGreen">
+                  login and Register with next-auth to handle Authentication
+                </span>{' '}
+                .With login and Register with next-auth to handle
+                Authentication.Users can add products to cart and
+                <span className="text-textGreen">
+                  make payment through cash on delivery or Online
+                  payment(PayPal)
+                </span>
               </p>
               <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2  md:gap-5 justify-between  text-textDark">
                 <li>Next</li>
                 <li>Javascript</li>
-                <li>Tailwind</li>
-                <li>Stripe</li>
-                <li>Vercel Deployment</li>
+                <li>Paypal</li>
+                <li>Headless ui</li>
+                <li>Mongoose</li>
+                <li>Next-auth</li>
+                <li>axios</li>
               </ul>
               <div className="text-2xl flex gap-4">
                 <Link
@@ -138,15 +143,17 @@ const Project = () => {
         <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
           <div className="flex flex-col xl:flex-row gap-6">
             <Link
-              href="https://ecommerce-rosy-zeta.vercel.app/"
+              href="https://my-personal-blog-binod.vercel.app/"
               target="_blank"
               className="w-full xl:w-1/2 h-auto relative group"
             >
               <div>
                 <Image
                   className="w-full h-full object-contain"
-                  src={host}
+                  src={blog}
                   alt="host.webp"
+                  placeholder="blur"
+                  quality={80}
                 />
               </div>
             </Link>
@@ -154,32 +161,31 @@ const Project = () => {
               <p className="font-titleFont text-textGreen text-sm tracking-wide">
                 Featured Projects
               </p>
-              <h3 className="text-2xl font-bold">Amazon Clone</h3>
+              <h3 className="text-2xl font-bold">Blog</h3>
               <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
-                tempore?
-                <span className="text-textGreen">0-auth</span> Lorem ipsum dolor
-                sit amet.
-                <span className="text-textGreen">stripe</span>
+                A simple personal blog webapp with minimalist design
+                {''} <span className="text-textGreen">Dark and Light</span> Mode
+                to toggle between and {''}
+                <span className="text-textGreen">Sanity as a cms</span>
               </p>
               <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2  md:gap-5 justify-between  text-textDark">
                 <li>Next</li>
-                <li>Javascript</li>
+                <li>Typescript</li>
                 <li>Tailwind</li>
-                <li>Stripe</li>
+                <li>Sanity</li>
                 <li>Vercel Deployment</li>
               </ul>
               <div className="text-2xl flex gap-4">
                 <Link
                   className="hover:text-textGreen duration-300"
-                  href="https://github.com/Binod69/ecommerce-wholesale"
+                  href="https://github.com/Binod69/blog-next"
                   target="_blank"
                 >
                   <AiOutlineGithub />
                 </Link>
                 <Link
                   className="hover:text-textGreen duration-300"
-                  href="https://ecommerce-binod69.vercel.app/"
+                  href="https://my-personal-blog-binod.vercel.app/"
                   target="_blank"
                 >
                   <CiShare1 />
