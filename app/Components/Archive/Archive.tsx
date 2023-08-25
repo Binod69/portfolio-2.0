@@ -54,15 +54,10 @@ const Archive = () => {
           />
           <ArchiveCard
             title={'Fullstack Crud'}
-            desc={'Fullstack Crud app with Node,Express,MongoDB,Next.js'}
-            listItem={[
-              'Node',
-              'Express',
-              'MongoDB',
-              'Next.js',
-              'Typescript',
-              'Javascript',
-            ]}
+            desc={
+              'Fullstack Crud app with Node,Express,MongoDB,Next.js,Typescript,Javascript'
+            }
+            listItem={['Node', 'Express', 'MongoDB', 'Next.js']}
             link={'https://basic-crud-frontend.vercel.app/'}
           />
           {/* {showMore && (
