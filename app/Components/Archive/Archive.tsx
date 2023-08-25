@@ -52,14 +52,19 @@ const Archive = () => {
             listItem={['React', 'Redux', 'Tailwind']}
             link={'https://ai-summarizer-swart.vercel.app/'}
           />
-          {/* <ArchiveCard
-            title={' Kindergarden'}
-            desc={
-              ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrumculpa voluptas commodi sequi eveniet iusto tempore cumquedignissimos voluptatum quod!'
-            }
-            listItem={['React', 'Bootstrap', 'React-Router']}
-            link={'https://kindergarten-eight.vercel.app/'}
-          /> */}
+          <ArchiveCard
+            title={'Fullstack Crud'}
+            desc={'Fullstack Crud app with Node,Express,MongoDB,Next.js'}
+            listItem={[
+              'Node',
+              'Express',
+              'MongoDB',
+              'Next.js',
+              'Tailwind',
+              'Nextui',
+            ]}
+            link={'https://basic-crud-frontend.vercel.app/'}
+          />
           {/* {showMore && (
             <>
               <motion.div

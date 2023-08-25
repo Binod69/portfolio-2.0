@@ -2,7 +2,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { CiShare1 } from 'react-icons/ci';
-import host from '../../../public/assets/host.webp';
 
 interface Props {
   orderimg: string;
